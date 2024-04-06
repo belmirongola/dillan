@@ -1,0 +1,10 @@
+runtime: python37  # Specify the Python runtime version
+
+# Define a single service with one handler for the root path
+handlers:
+- url: /.*
+  script: auto
+
+# Serve static files from a dedicated directory
+# (uncomment if you have static assets like CSS, JS, or images)
+# static_dir: static
